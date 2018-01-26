@@ -1,0 +1,20 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+
+  I have learned how to properly use the <figure> and <figcaption> tags. I have previously only used <img> and <p> tags for images and their respective captions.
+
+  * What has been easy?
+
+  I already know basic HTML, so everything so far has been more of a review. Regardless it has been very benefical reading through Mozilla's Web Docs.
+
+  * What has been difficult?
+
+  I have a hard time knowing when something is completely done. I am always re-reading my code over and over again to make sure it is not only correct, but written in the most effecient manner possible. 
+
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+  It has shown me that there are multiple ways to do something while writing code. 
+
+---
+
+Your response goes here!
