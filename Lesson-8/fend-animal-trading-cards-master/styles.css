@@ -1,0 +1,56 @@
+/* add your CSS here */
+
+#interestingfact {
+	font-style: italic;
+}
+
+.boldlabel {
+	font-weight: bold;
+}
+
+#nodots {
+	list-style-type: none;
+	padding: 0px;
+}
+
+#outerborder {
+	border: 1px solid #cecece;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px #ccc;
+	width: 300px;
+	padding: 10px;
+	background-color: #4c4cff;
+}
+
+#innerborder {
+	border: 1px solid #cecece;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #E8E8E8;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.album-pic-exit {
+  	display: none;
+}
+
+.album-pic:hover + .album-pic-exit {
+  	display: inline;
+}
+
+#animalname {
+	color: #ffffff;
+}
+
+#link {
+	float: right;
+	color: #ffff32;
+}
+
+#link:hover {
+	color: #FFA500;
+}
