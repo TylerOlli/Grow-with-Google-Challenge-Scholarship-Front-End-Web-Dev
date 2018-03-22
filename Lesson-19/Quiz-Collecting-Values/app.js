@@ -9,5 +9,5 @@ For more on events, check the instructor notes.
 $('#input').on('change', function() {
     var val;
     val = $('#input').val();
-    h1 = $('h1').text(val);
+    h1 = $('.articles h1').text(val);
 });
