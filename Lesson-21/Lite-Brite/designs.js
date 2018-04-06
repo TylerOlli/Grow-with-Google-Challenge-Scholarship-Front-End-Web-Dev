@@ -16,6 +16,7 @@ var numCols = document.querySelectorAll("td").length;
 
 function makeGrid(){
     $("#pixelCanvas tr").remove();
+    $("#canvasContainer").append('<br><input type="button" onclick="resetGrid()" value="Reset">')
     var inputHeight = document.getElementById("inputHeight").value;
     var inputWeight = document.getElementById("inputWeight").value;
     var numberHeight = Number(inputHeight);
@@ -30,5 +31,8 @@ function makeGrid(){
     for (var i = numCols; i < numberWeight; i++) {
         $('tr').append("<td class='add' onclick='changeColor()'>");
     };
-
 };
+
+function resetGrid(){
+    $("td").css('background-color', '');
+};    
