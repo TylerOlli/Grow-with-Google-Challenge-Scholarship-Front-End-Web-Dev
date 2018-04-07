@@ -18,6 +18,7 @@ function makeGrid(){
     $("#canvasContainer h2").remove();
     $("#pixelCanvas tr").remove();
     $("#canvasContainer input").remove();
+    $("#giphy").remove();
     $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset">')
     $("table").css('outline-style', 'solid')
     $("#canvasContainer").prepend('<h2>Design Canvas</h2>')
