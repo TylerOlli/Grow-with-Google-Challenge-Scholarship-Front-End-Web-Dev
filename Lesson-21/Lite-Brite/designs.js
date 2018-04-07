@@ -21,7 +21,7 @@ function makeGrid(){
     $("#giphy").remove();
     $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset">')
     $("table").css('outline-style', 'solid')
-    $("#canvasContainer").prepend('<h2>Design Canvas</h2>')
+    $("#canvasContainer").prepend('<h2 id="designCanvas">Design Canvas</h2>')
     var inputHeight = document.getElementById("inputHeight").value;
     var inputWeight = document.getElementById("inputWeight").value;
     var numberHeight = Number(inputHeight);
