@@ -8,25 +8,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="container">
     <img src="lite-brite-logo.png" id="logo" class="img-fluid">
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        <input type="number" id="inputHeight" name="height" min="1" value="10">
         Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="number" id="inputWeight" name="width" min="1" value="20">
         <input type="button" onclick="makeGrid()" value="submit">
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <input type="color" id="colorPicker" value="#ffffff">
 
-    <h2>Design Canvas</h2>
     <div id="canvasContainer">
     <table id="pixelCanvas"></table>
+    <br>
     </div>
-    
+    </div>
     <script src="designs.js"></script>
 </body>
 </html>

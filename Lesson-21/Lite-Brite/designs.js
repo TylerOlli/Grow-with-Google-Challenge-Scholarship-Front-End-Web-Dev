@@ -15,8 +15,12 @@ var numCols = document.querySelectorAll("td").length;
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid(){
+    $("#canvasContainer h2").remove();
     $("#pixelCanvas tr").remove();
-    $("#canvasContainer").append('<br><input type="button" onclick="resetGrid()" value="Reset">')
+    $("#canvasContainer input").remove();
+    $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset">')
+    $("table").css('outline-style', 'solid')
+    $("#canvasContainer").prepend('<h2>Design Canvas</h2>')
     var inputHeight = document.getElementById("inputHeight").value;
     var inputWeight = document.getElementById("inputWeight").value;
     var numberHeight = Number(inputHeight);
