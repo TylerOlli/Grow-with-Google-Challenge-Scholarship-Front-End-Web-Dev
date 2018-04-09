@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: black;
+    background-color: purple;
 }
 
 h1 {
@@ -70,6 +70,7 @@ input[type=number] {
 .container {
     background-color: black;
     padding-bottom: 10px;
+    height: 100vh;
 }
 
 .top {
