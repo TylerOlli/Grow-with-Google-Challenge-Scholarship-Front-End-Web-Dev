@@ -19,13 +19,13 @@ function makeGrid(){
     $("#pixelCanvas tr").remove();
     $("#canvasContainer input").remove();
     $("#giphy").remove();
-    $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset">')
+    $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset" class="btn btn-primary btn-sm">')
     $("table").css('outline-style', 'solid')
     $(".pickacolor").remove();
     $("#canvasContainer").prepend('<h2 id="designCanvas">Design Canvas</h2>')
     $("#canvasContainer").prepend('<input type="color" id="colorPicker" value="#ffffff">')
     $("#canvasContainer").prepend('<h4 class="pickacolor">Pick A Color</h4>')
-    $("#canvasContainer").append('<input type="button" onclick="saveImage()" value="Save">')
+    $("#canvasContainer").append('<input type="button" onclick="saveImage()" value="Save" class="btn btn-primary btn-sm">')
     var inputHeight = document.getElementById("inputHeight").value;
     var inputWeight = document.getElementById("inputWeight").value;
     var numberHeight = Number(inputHeight);

@@ -67,10 +67,6 @@ input[type=number] {
     margin: 5px;
 }
 
-.form-control {
-    text-align: center;
-}
-
 .container {
     background-color: black;
     padding-bottom: 10px;
@@ -83,4 +79,8 @@ input[type=number] {
 
 .top {
     margin: 10px;
+}
+
+.form-inline {
+    text-align: center;
 }
