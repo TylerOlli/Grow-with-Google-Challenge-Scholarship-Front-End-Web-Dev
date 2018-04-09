@@ -91,3 +91,7 @@ border-radius: 50px;
 text-align: center;
 }
 
+td {
+    background-clip: padding-box; /* this has been added */
+    border-radius: 25px;
+}
