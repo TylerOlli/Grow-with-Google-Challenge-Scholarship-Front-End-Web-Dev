@@ -4,31 +4,46 @@
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
     <div class="container">
-    <img src="lite-brite-logo.png" id="logo" class="img-fluid">
+      <div class="row">
+        <div class="col-lg-12 rounded top">
+          <img src="lite-brite-logo.png" id="logo" class="img-fluid">
+          <hr class="my-4">
+          <div class="row">
+            <div class="col-lg-12 rounded">
+                <h4>Choose Grid Size</h4>
+                <form id="sizePicker">
+                    Height:
+                    <input type="number" id="inputHeight" name="height" min="1" value="10">
+                    Width:
+                    <input type="number" id="inputWeight" name="width" min="1" value="20">
+                </form>
+            </div>
+            <div class="col-lg-12 rounded">
+              <p class="lead">
+                <input type="button" onclick="makeGrid()" value="Start" class="btn btn-primary btn-lg">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="10">
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="20">
-        <input type="button" onclick="makeGrid()" value="Start">
-    </form>
-
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker" value="#ffffff">
-
-    <div id="canvasContainer">
-    <table id="pixelCanvas"></table>
-    <br>
+      <div class="row">
+        <div class="col-lg-12 rounded bottom">
+            <div id="canvasContainer">
+            <table id="pixelCanvas"></table>
+            <br>
+            </div>
+            <img src="Lite-Brite-Examples.gif" id="giphy">
+        </div>
+      </div>
     </div>
-    <img src="Lite-Brite-Examples.gif" id="giphy">
-    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script src="designs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </body>
 </html>

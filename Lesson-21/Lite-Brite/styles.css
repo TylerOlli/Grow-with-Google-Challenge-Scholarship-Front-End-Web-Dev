@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: purple;
+    background-color: black;
 }
 
 h1 {
@@ -17,6 +17,10 @@ h2 {
 
 h2:first-of-type {
     margin-top: 0.5em;
+}
+
+h4 {
+    color: white;
 }
 
 form {
@@ -55,11 +59,28 @@ input[type=number] {
     width: 600px;
 }
 
-.container {
-    background-color: black;
-    height:100vh;
-}
-
 #designCanvas {
     margin-bottom: 20px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    margin-top: 10px;
+    background-color: black;
+}
+
+.top {
+    margin: 10px;
 }

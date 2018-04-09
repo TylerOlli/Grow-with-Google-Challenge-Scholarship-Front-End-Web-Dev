@@ -21,7 +21,11 @@ function makeGrid(){
     $("#giphy").remove();
     $("#canvasContainer").append('<input type="button" onclick="resetGrid()" value="Reset">')
     $("table").css('outline-style', 'solid')
+    $(".pickacolor").remove();
     $("#canvasContainer").prepend('<h2 id="designCanvas">Design Canvas</h2>')
+    $("#canvasContainer").prepend('<input type="color" id="colorPicker" value="#ffffff">')
+    $("#canvasContainer").prepend('<h4 class="pickacolor">Pick A Color</h4>')
+    $("#canvasContainer").append('<input type="button" onclick="saveImage()" value="Save">')
     var inputHeight = document.getElementById("inputHeight").value;
     var inputWeight = document.getElementById("inputWeight").value;
     var numberHeight = Number(inputHeight);
@@ -40,4 +44,17 @@ function makeGrid(){
 
 function resetGrid(){
     $("td").css('background-color', '');
-};    
+};
+
+function saveImage() {
+    html2canvas(pixelCanvas, {
+        onrendered: function (canvas) {
+            let imageURI = canvas.toDataURL();
+            let myLink = document.createElement('a');
+            myLink.download = "yourart.png";
+            myLink.href = imageURI;
+            document.body.appendChild(myLink);
+            myLink.click();
+        }
+    });
+}
