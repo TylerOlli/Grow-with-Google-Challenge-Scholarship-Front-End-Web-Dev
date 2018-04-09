@@ -72,15 +72,13 @@ input[type=number] {
     padding-bottom: 10px;
 }
 
-.jumbotron {
-    margin-top: 10px;
-    background-color: black;
-}
-
 .top {
     margin: 10px;
 }
 
-.form-inline {
-    text-align: center;
+input {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
 }
