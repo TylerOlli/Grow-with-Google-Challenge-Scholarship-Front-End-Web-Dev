@@ -76,9 +76,17 @@ input[type=number] {
     margin: 10px;
 }
 
-input {
+#inputHeight {
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
 text-align: center;
 }
+
+#inputWeight {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
+}
+
