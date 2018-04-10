@@ -8,11 +8,11 @@ function changeColor(){
 
 // Select size input
 
-var table = document.getElementById("pixelCanvas");
-var numRows = document.querySelectorAll("tr").length;
-var numCols = document.querySelectorAll("td").length;
+const table = document.getElementById("pixelCanvas");
+const numRows = document.querySelectorAll("tr").length;
+const numCols = document.querySelectorAll("td").length;
 
-// When size is submitted by the user, call makeGrid()
+// Creates the grid
 
 function makeGrid(){
     $("#canvasContainer h2").remove();
@@ -42,9 +42,13 @@ function makeGrid(){
     };
 };
 
+// Resets Grid
+
 function resetGrid(){
     $("td").css('background-color', '');
 };
+
+// Saves design to a PNG image
 
 function saveImage() {
     html2canvas(pixelCanvas, {
