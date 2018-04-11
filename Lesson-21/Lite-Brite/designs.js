@@ -47,14 +47,12 @@ function makeGrid(){
 function resetGrid(){
     $("td").css('background-color', '');
     $("td").css('border', '1px solid #696969');
-    $('td').css('border-radius', '25px');
 };
 
 // Saves design to a PNG image
 
 function saveImage() {
-    $("td").css('border', '1px solid black');
-    $('td').css('border-radius', '0px');
+    $("td").css('border','1px solid black');
     html2canvas(pixelCanvas, {
         onrendered: function (canvas) {
             let imageURI = canvas.toDataURL();

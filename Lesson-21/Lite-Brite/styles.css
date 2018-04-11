@@ -95,7 +95,7 @@ text-align: center;
 
 td {
     background-clip: padding-box; /* this has been added */
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 #giphy {
