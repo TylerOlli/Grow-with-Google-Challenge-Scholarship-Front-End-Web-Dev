@@ -40,6 +40,7 @@ function makeGrid(){
     for (var i = numCols; i < numberWeight; i++) {
         $('tr').append("<td class='add' onclick='changeColor()'>");
     };
+    $("td").css('border', '1px solid #696969');
 };
 
 // Resets Grid
@@ -53,14 +54,14 @@ function resetGrid(){
 
 function saveImage() {
     $("td").css('border','1px solid black');
-    html2canvas(pixelCanvas, {
-        onrendered: function (canvas) {
-            let imageURI = canvas.toDataURL();
-            let myLink = document.createElement('a');
-            myLink.download = "yourart.png";
-            myLink.href = imageURI;
-            document.body.appendChild(myLink);
-            myLink.click();
-        }
+    $("tr").css('border-radius','0px');
+    html2canvas(pixelCanvas).then(function(canvas) {
+                document.body.appendChild(canvas);
+                let imageURI = canvas.toDataURL();
+                let myLink = document.createElement('a');
+                myLink.download = "yourart.png";
+                myLink.href = imageURI;
+                document.body.appendChild(myLink);
+                myLink.click();
     });
 }
