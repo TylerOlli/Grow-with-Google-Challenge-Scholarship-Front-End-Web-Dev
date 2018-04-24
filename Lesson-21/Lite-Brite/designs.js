@@ -35,20 +35,20 @@ function makeGrid(){
         var ii = 0;
         $('#pixelCanvas').append("<tr>");
         
-    };
+    }
 
     for (var i = numCols; i < numberWeight; i++) {
         $('tr').append("<td class='add' onclick='changeColor()'>");
-    };
+    }
     $("td").css('border', '1px solid #696969');
-};
+}
 
 // Resets Grid
 
 function resetGrid(){
     $("td").css('background-color', '');
     $("td").css('border', '1px solid #696969');
-};
+}
 
 // Saves design to a PNG image
 
